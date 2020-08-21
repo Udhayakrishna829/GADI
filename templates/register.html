@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <title>Gadi signup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                width:100%;
+                background-color: black;
+                background-size: cover;
+                background-position:center;
+                font-family: sans-serif;
+            }
+            .register-box{
+                display:grid;
+                align-content: center;
+                width: 70%;
+                height: 610px;
+                margin-top:1rem;
+                background: rgba(16, 17, 110, 0.829);
+                border-radius: 5px;
+                color:white;
+                top:350px;
+                left:45%;
+                position:absolute;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                padding: 1rem 1rem;
+            }
+            .avatar{
+                    width:100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top:-50px;
+                    left: calc(50% - 50px);               
+            }
+            h1{
+                margin: 0;
+                padding: 0px 0px 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .register-box p{
+                margin:0;
+                padding: 0;
+                margin-left:10%;
+                font-weight: bold;
+            }
+            .register-box input{
+                width:100%;
+                margin-bottom: 20px;
+            }
+            .register-box input[type="text"],input[type="password"],input[type="email"],input[type="number"]{
+
+                    border:none;
+                    border-bottom: 1px solid #fff;
+                    background:transparent;
+                    outline:none;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height:40px;
+                    width: 80%;
+                    color:#fff;
+                    transition: .25s;
+                    font-size:16px;
+            }
+            .flname{
+                    display:flex;
+                    justify-content:flex-start;
+                    border:none;
+            }
+            .action{
+                display:flex;
+                justify-content:space-around;
+                }
+            
+            .radio-status{
+                display:flex;
+                justify-content:space-evenly;
+            }
+
+                
+            
+            .register-box input[type="reset"].in{
+                font-weight: bold;
+                border:none;
+                height:35px;
+                width:100px;
+                outline: none;
+                background:green;
+                color:#fff;
+                font-size:18px;
+                border-radius:20px;
+            }
+            .register-box input[type="reset"].in:hover{
+                background:rgb(50, 194, 50);
+            }
+            
+            .register-box input[type="submit"].signup{
+                height:35px;
+                width:100px;
+                font-size:18px;
+                border:2px solid green;
+                outline: none;
+                font-weight: bold;
+                background:white;
+                color:green;
+                font-size:15px;
+                border-radius:20px;
+            }
+            .register-box a{
+                text-decoration: none;
+                font-size:14px;
+                color:#fff;
+            } 
+            .register-box a:hover{
+                color:rgb(199, 45, 45);
+            }
+            .register-box input[type="text"]:focus {
+                width:90%;
+            }
+            .register-box input[type="password"]:focus{
+                width:90%;
+            }
+            .register-box input[type="email"]:focus{
+                width:90%;
+            }
+            .register-box input[type="submit"].signup:hover{
+                color:#fff;
+                border:2px solid white;
+                background:green;
+            
+            }
+            .alignheading{
+                margin-left:50px;
+            }
+
+
+
+@media screen and (max-width:800px){
+    .register-box{
+                display:grid;
+                width: 400px;
+                height: 800px;
+                margin-top: 10%;
+                background: rgba(16, 17, 110, 0.829);
+                border-radius: 5px;
+                color:white;
+                top:400px;
+                left:250px;
+                position:absolute;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                padding: 30px 30px;
+            }
+            .avatar{
+                    width:100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top:-50px;
+                    left: calc(50% - 50px);               
+            }
+
+            h1{
+                margin: 0;
+                padding: 0px 0px 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .register-box div{
+            	margin-right: 0.5rem;
+            	width: 20rem;
+            	
+            }
+
+            .register-box p{
+                margin:0;
+                padding: 0;
+                font-weight: bold;
+            }
+            .register-box input{
+                width:15rem;
+                margin-bottom: 20px;
+            }
+            .register-box input[type="text"],input[type="password"],input[type="email"],input[type="number"]{
+                border:none;
+                border-bottom: 1px solid #fff;
+                background:transparent;
+                outline:none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height:40px;
+                width: 15rem;
+                color:#fff;
+                transition: .25s;
+                font-size:1rem;
+            }
+            .flname{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border:none;
+            }
+
+            .action{
+                display:grid;
+                grid-row-start: 2;
+                justify-content: space-between;
+                }
+            
+            .radio-status{
+            	width: 100%;
+                display:flex;
+                flex-shrink: 1;
+                justify-content:space-between;
+            }
+
+                
+            
+            .register-box input[type="reset"].in{
+                font-weight: bold;
+                border:none;
+                height:35px;
+                width:100px;
+                outline: none;
+                background:green;
+                color:#fff;
+                font-size:18px;
+                border-radius:20px;
+            }
+            .register-box input[type="reset"].in:hover{
+                background:rgb(50, 194, 50);
+            }
+            
+            .register-box input[type="submit"].signup{
+                height:35px;
+                width:100px;
+                font-size:18px;
+                border:2px solid green;
+                outline: none;
+                font-weight: bold;
+                background:white;
+                color:green;
+                font-size:15px;
+                border-radius:20px;
+            }
+            .register-box a{
+                text-decoration: none;
+                font-size:14px;
+                color:#fff;
+            } 
+            .register-box a:hover{
+                color:rgb(199, 45, 45);
+            }
+            .register-box input[type="text"]:focus {
+                width:90%;
+            }
+            .register-box input[type="password"]:focus{
+                width:90%;
+            }
+            .register-box input[type="email"]:focus{
+                width:90%;
+            }
+            .register-box input[type="submit"].signup:hover{
+                color:#fff;
+                border:2px solid white;
+                background:green;
+            }
+            .alignheading{
+                margin-left:auto;
+            }
+}
+        </style>
+    </head>
+    <body>
+            <script>
+            function password_check(){
+                var x=document.getElementById("password1").value;
+                var y=document.getElementById("password2").value;
+                if(x!=y){
+                    alert("check your password");
+                }
+            }
+            </script>
+         
+        <div class="register-box">
+                <center><p  style="color:lightgreen">Signup with your details</p></center><br>
+                <form>
+                    <div class="flname">
+                        <p>First name
+                        <input type="text" name="first name" placeholder="First name"></p>
+
+                        <p>Last name
+                        <input type="text" name="last name" placeholder="Last name"></p>
+                    </div>
+                    <div>
+                            <p>Phone no</p>
+                            <input type="text" name="phone no" placeholder="phone no">
+                        </div>
+                    <div>
+                            <p>Email</p>
+                            <input type="email" name="Email" placeholder="mail id">
+                        </div>
+                        <div>
+                                <p>password</p>
+                                <input type="password" id="password1" name="password" placeholder="password">
+                            </div>
+                            <div>
+                                    <p>Re-enter password</p>
+                                    <input type="password" id="password2"  name="Re-enter password" placeholder="Re-enter password">
+                                </div>
+                            <br>
+                        <div class="radio-status">
+                            
+                                <p>User</p>
+                                <input type="radio" name="status" value=""><br>
+                                <p>Shop Keeper</p>
+                                <input type="radio" name="status" value=""><br> 
+                            </div>
+                            <br>
+                        <div class="action">
+                                <input class="signup" type="submit" name="sign up" value="sign up" onclick="password_check();">
+                                <input type="reset" class="in" name="Reset" value="reset">
+                                <a href="/login">Already have account ?</a>
+                            </div>
+                        </form>
+                        <!--
+            <img class="avatar" src="user.png">
+            <h1>Log in</h1>
+            <form>
+                <p>User id</p>
+                <input type="text" name="User id" placeholder="User id">
+                <p>Password</p>
+                <input type="password" name="Password" placeholder="Password">
+                <div class="action">
+                <input type="submit" class="in" name="submit" value="login">
+                <input class="signup" type="submit" name="sign up" value="sign up">
+            </div>
+                <a href="#">Forgot password</a>
+            </form>-->
+
+        </div>
+    </body>
+</html>
